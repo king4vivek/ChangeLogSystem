@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "0g9NBwjhvK3yTyIsr2e90CHkUYUT16xjjPOXR8la+hVfX1+BlXY3GsdDkTEl2YvRJczOWNrl8g2ayY9UF3iPsg==",
+  "dgSpecHash": "ENvXk0/cxoitJcnY67zjbui7/Jgbnl3d0DwklwKE9DBvU/8vy0JME6UAZzHu4i/OSZuaEn+OOjaeJW5d3ibx3Q==",
   "success": true,
   "projectFilePath": "D:\\Git\\ChangeLogSystem\\CLS_APP\\ChangeLogSystem.Projects.WebApi\\ChangeLogSystem.Projects.WebApi.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\king4\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\king4\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\king4\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\king4\\.nuget\\packages\\swashbuckle.aspnetcore\\6.1.1\\swashbuckle.aspnetcore.6.1.1.nupkg.sha512",
+    "C:\\Users\\king4\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.1.1\\swashbuckle.aspnetcore.swagger.6.1.1.nupkg.sha512",
+    "C:\\Users\\king4\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.1.1\\swashbuckle.aspnetcore.swaggergen.6.1.1.nupkg.sha512",
+    "C:\\Users\\king4\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.1.1\\swashbuckle.aspnetcore.swaggerui.6.1.1.nupkg.sha512"
+  ],
   "logs": []
 }

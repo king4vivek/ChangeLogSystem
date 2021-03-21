@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "CI32X/HBuOXwptbwLAWHg30dWmutDUMKc//sbM4IdFPv1T4I7wAySNfVSm5uTayzJl9gWCGM8F5TgyNqSzg95g==",
+  "success": true,
+  "projectFilePath": "D:\\Git\\ChangeLogSystem\\CLS_APP\\ChangeLogSystem.Projects.Data\\ChangeLogSystem.Projects.Data.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\king4\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,12 @@
+{
+  "appName": "Change Log System",
+  "changeLogs": [
+    {
+      "Identity": 0,
+      "Type": 1,
+      "Title": "Default Title",
+      "Content": "Default Content"
+    }
+  ],
+  "counter": 0
+}

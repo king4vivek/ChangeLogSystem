@@ -4,14 +4,14 @@
     "D:\\Git\\ChangeLogSystem\\CLS_APP\\ChangeLogSystem.Projects.WebApi\\ChangeLogSystem.Projects.WebApi.csproj": {}
   },
   "projects": {
-    "D:\\Git\\ChangeLogSystem\\CLS_APP\\ChangeLogSystem.Projects.WebApi\\ChangeLogSystem.Projects.WebApi.csproj": {
+    "D:\\Git\\ChangeLogSystem\\CLS_APP\\ChangeLogSystem.Projects.Data\\ChangeLogSystem.Projects.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git\\ChangeLogSystem\\CLS_APP\\ChangeLogSystem.Projects.WebApi\\ChangeLogSystem.Projects.WebApi.csproj",
-        "projectName": "ChangeLogSystem.Projects.WebApi",
-        "projectPath": "D:\\Git\\ChangeLogSystem\\CLS_APP\\ChangeLogSystem.Projects.WebApi\\ChangeLogSystem.Projects.WebApi.csproj",
+        "projectUniqueName": "D:\\Git\\ChangeLogSystem\\CLS_APP\\ChangeLogSystem.Projects.Data\\ChangeLogSystem.Projects.Data.csproj",
+        "projectName": "ChangeLogSystem.Projects.Data",
+        "projectPath": "D:\\Git\\ChangeLogSystem\\CLS_APP\\ChangeLogSystem.Projects.Data\\ChangeLogSystem.Projects.Data.csproj",
         "packagesPath": "C:\\Users\\king4\\.nuget\\packages\\",
-        "outputPath": "D:\\Git\\ChangeLogSystem\\CLS_APP\\ChangeLogSystem.Projects.WebApi\\obj\\",
+        "outputPath": "D:\\Git\\ChangeLogSystem\\CLS_APP\\ChangeLogSystem.Projects.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\king4\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,76 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Git\\ChangeLogSystem\\CLS_APP\\ChangeLogSystem.Projects.WebApi\\ChangeLogSystem.Projects.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Git\\ChangeLogSystem\\CLS_APP\\ChangeLogSystem.Projects.WebApi\\ChangeLogSystem.Projects.WebApi.csproj",
+        "projectName": "ChangeLogSystem.Projects.WebApi",
+        "projectPath": "D:\\Git\\ChangeLogSystem\\CLS_APP\\ChangeLogSystem.Projects.WebApi\\ChangeLogSystem.Projects.WebApi.csproj",
+        "packagesPath": "C:\\Users\\king4\\.nuget\\packages\\",
+        "outputPath": "D:\\Git\\ChangeLogSystem\\CLS_APP\\ChangeLogSystem.Projects.WebApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\king4\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\Git\\ChangeLogSystem\\CLS_APP\\ChangeLogSystem.Projects.Data\\ChangeLogSystem.Projects.Data.csproj": {
+                "projectPath": "D:\\Git\\ChangeLogSystem\\CLS_APP\\ChangeLogSystem.Projects.Data\\ChangeLogSystem.Projects.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeLogSystem.Projects.Mvc", "ChangeLogSystem.Projects.Mvc\ChangeLogSystem.Projects.Mvc.csproj", "{74C52800-6611-43B2-AE99-D5D088B2C3DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChangeLogSystem.Projects.Mvc", "ChangeLogSystem.Projects.Mvc\ChangeLogSystem.Projects.Mvc.csproj", "{74C52800-6611-43B2-AE99-D5D088B2C3DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeLogSystem.Projects.WebApi", "ChangeLogSystem.Projects.WebApi\ChangeLogSystem.Projects.WebApi.csproj", "{362443DB-C966-447E-A9E2-05D9B93986B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChangeLogSystem.Projects.WebApi", "ChangeLogSystem.Projects.WebApi\ChangeLogSystem.Projects.WebApi.csproj", "{362443DB-C966-447E-A9E2-05D9B93986B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeLogSystem.Projects.Data", "ChangeLogSystem.Projects.Data\ChangeLogSystem.Projects.Data.csproj", "{B904C39D-DFB4-4F11-A800-B0F903CCF1DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{362443DB-C966-447E-A9E2-05D9B93986B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{362443DB-C966-447E-A9E2-05D9B93986B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{362443DB-C966-447E-A9E2-05D9B93986B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B904C39D-DFB4-4F11-A800-B0F903CCF1DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B904C39D-DFB4-4F11-A800-B0F903CCF1DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B904C39D-DFB4-4F11-A800-B0F903CCF1DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B904C39D-DFB4-4F11-A800-B0F903CCF1DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
