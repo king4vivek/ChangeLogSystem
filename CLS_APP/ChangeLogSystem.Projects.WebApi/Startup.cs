@@ -29,7 +29,7 @@ namespace ChangeLogSystem.Projects.WebApi
         {
             services.AddControllers();
             services.AddSwaggerGen();
-            services.AddTransient<IChangeLogSystemRepository, ReleaseJsonRepository>();
+            services.AddTransient<IChangeLogSystemRepository, ChangeLogSystemJsonRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

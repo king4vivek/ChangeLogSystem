@@ -1,0 +1,67 @@
+﻿@model IEnumerable<ChangeLogSystem.Projects.Mvc.Models.ChangeLogModel>
+
+@{
+    ViewData["Title"] = "Change Log System";
+}
+
+<h1>Change Log System</h1>
+
+<div>
+    <h4>Change Log System</h4>
+    <hr />
+    @if (Model?.Any() == true)
+    {
+        foreach (var changeLog in Model)
+        {
+            <div class="row @ChangeType((int)changeLog.Type)">
+                <div class="col-md-1 col-sm-1 col--1">
+                    @changeLog.Identity
+                </div>
+                <div class="col-md-2 col-sm-2">
+                    <strong> @changeLog.Title</strong>
+                </div>
+                <div class="col-md-5 col-sm-5">
+                    @changeLog.Content
+                </div>
+                <div class="col-md-3 col-sm-5">
+                    @changeLog.TimeStamp
+                </div>
+                <div class="col-md-1 col-sm-1 float-right @BadgeType((int)changeLog.Type)">
+                    @changeLog.Type
+                </div>
+            </div>
+        }
+    }
+</div>
+@functions
+{
+    public string ChangeType(int type)
+    {
+        switch (type)
+        {
+            case 1:
+                return "alert alert-primary";
+            case 2:
+                return "alert alert-success";
+            case 3:
+                return "alert alert-danger";
+            default:
+                return "alert alert-secondary";
+        }
+    }
+
+    public string BadgeType(int type)
+    {
+        switch (type)
+        {
+            case 1:
+                return "badge badge-primary";
+            case 2:
+                return "badge badge-success";
+            case 3:
+                return "badge badge-danger";
+            default:
+                return "badge badge-secondary";
+        }
+    }
+}  

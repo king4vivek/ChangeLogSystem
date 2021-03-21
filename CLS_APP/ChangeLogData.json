@@ -1,1 +1,1 @@
-{"appName":null,"changeLogs":[{"Identity":1,"Title":"string","Type":1,"Content":"string"}],"counter":1}
+{"appName":null,"changeLogs":[{"Identity":1,"Title":"New Release","Type":1,"Content":"This is a New Release","TimeStamp":"2021-03-21T17:28:11.5801024Z"},{"Identity":2,"Title":"Update Release","Type":2,"Content":"This is an Update Release","TimeStamp":"2021-03-21T17:28:32.8778466Z"},{"Identity":3,"Title":"Fix Release","Type":3,"Content":"This is a Fix Release","TimeStamp":"2021-03-21T17:32:37.0776529Z"}],"counter":3}

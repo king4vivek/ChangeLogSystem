@@ -6,4 +6,3 @@ D:\Git\ChangeLogSystem\CLS_APP\ChangeLogSystem.Projects.Data\obj\Debug\netcoreap
 D:\Git\ChangeLogSystem\CLS_APP\ChangeLogSystem.Projects.Data\obj\Debug\netcoreapp3.1\ChangeLogSystem.Projects.Data.csproj.CoreCompileInputs.cache
 D:\Git\ChangeLogSystem\CLS_APP\ChangeLogSystem.Projects.Data\obj\Debug\netcoreapp3.1\ChangeLogSystem.Projects.Data.dll
 D:\Git\ChangeLogSystem\CLS_APP\ChangeLogSystem.Projects.Data\obj\Debug\netcoreapp3.1\ChangeLogSystem.Projects.Data.pdb
-D:\Git\ChangeLogSystem\CLS_APP\ChangeLogSystem.Projects.Data\obj\Debug\netcoreapp3.1\ChangeLogSystem.Projects.Data.csprojAssemblyReference.cache
