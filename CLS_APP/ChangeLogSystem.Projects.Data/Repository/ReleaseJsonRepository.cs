@@ -1,6 +1,7 @@
 ﻿using ChangeLogSystem.Projects.Data.Interfaces;
 using ChangeLogSystem.Projects.Data.Model;
 using ChangeLogSystem.Projects.Data.Models;
+using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
@@ -12,15 +13,23 @@ using System.Threading.Tasks;
 
 namespace ChangeLogSystem.Projects.Data.Repository
 {
-    public class JsonRepository : IChangeLogSystemRepository
+    public class ReleaseJsonRepository : IChangeLogSystemRepository
     {
-        private const string jsonDatabaseLocation = @"ChangeLogData.json";
+        private string jsonDatabaseLocation = string.Empty;
 
-        public JsonRepository()
+        public ReleaseJsonRepository(IConfiguration configuration)
         {
+            jsonDatabaseLocation = ConfigurationExtensions.GetConnectionString(configuration, "jsonConnection");
+
             if (File.Exists(jsonDatabaseLocation))
             {
                 changeLogJsonModel = JsonConvert.DeserializeObject<ChangeLogJsonModel>(File.ReadAllText(jsonDatabaseLocation));
+
+                if (changeLogJsonModel == null)
+                {
+                    changeLogJsonModel = new ChangeLogJsonModel() { changeLogs = new List<ChangeLogModelDto>() };
+                    File.WriteAllText(jsonDatabaseLocation, JsonConvert.SerializeObject(changeLogJsonModel));
+                }
             }
             else
             {

@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ENvXk0/cxoitJcnY67zjbui7/Jgbnl3d0DwklwKE9DBvU/8vy0JME6UAZzHu4i/OSZuaEn+OOjaeJW5d3ibx3Q==",
+  "dgSpecHash": "6d4emI7joRUvFuE4tv061LXfFttbjicadQ2tejnJdZ0kxoFgHRgGsRd9GlHyOQZCFYUvsq+ajh/raVwQPVjCXg==",
   "success": true,
   "projectFilePath": "D:\\Git\\ChangeLogSystem\\CLS_APP\\ChangeLogSystem.Projects.WebApi\\ChangeLogSystem.Projects.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\king4\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\king4\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
+    "C:\\Users\\king4\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\king4\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\king4\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\king4\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\king4\\.nuget\\packages\\swashbuckle.aspnetcore\\6.1.1\\swashbuckle.aspnetcore.6.1.1.nupkg.sha512",
