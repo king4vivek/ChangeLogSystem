@@ -1,0 +1,27 @@
+<form #changeLogForm="ngForm" (ngSubmit)="onSubmit(changeLogForm)">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" class="form-control" placeholder="Enter Title" id="title" name="title" ngModel>
+    </div>
+   
+    <div class="form-group">
+      <label for="content">Content</label>
+      <input type="text" class="form-control" placeholder="Enter Content" id="content" name="content" ngModel>
+    </div>
+       
+    <div class="form-group">
+        <label for="type">Type</label>
+        <select class="form-control" name="type" id="type" ngModel>
+            <option selected="" value=""></option>
+            <option value="1">New</option>
+            <option value="2">Update</option>
+            <option value="3">Fix</option>
+        </select>
+    </div>
+   
+    <div class="form-group">
+      <input type="submit" class="btn btn-primary" value="Submit">
+      <input type="reset" class="btn btn-danger" value="Reset">
+    </div>
+   
+  </form>

@@ -1,4 +1,4 @@
-<div class="table-responsive">          
+<div class="table-condensed">
     <table class="table">
         <thead>
             <tr>
@@ -10,12 +10,20 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let changeLog of changeLogs">
+            <tr *ngFor="let changeLog of changeLogs" [ngClass]="{
+                'alert-primary': changeLog.type == 1,
+                'alert-success': changeLog.type == 2,
+                'alert-danger': changeLog.type == 3
+              }" >
                 <td>{{ changeLog.identity }}</td>
                 <td>{{ changeLog.title }}</td>
                 <td>{{ changeLog.content }}</td>
                 <td>{{ changeLog.timeStamp }}</td>
-                <td>{{ changeLog.type }}</td>
+                <td [ngClass]="{
+                    'badge-primary': changeLog.type == 1,
+                    'badge-success': changeLog.type == 2,
+                    'badge-danger': changeLog.type == 3
+                  }"> {{ changeLog.type == 1 ? "New" : (changeLog.type == 2 ? "Update" : "Fix")  }}</td>
             </tr>
         </tbody>
     </table>

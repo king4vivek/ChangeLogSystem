@@ -13,9 +13,7 @@ export class ChangeLogComponent implements OnInit {
 
   ngOnInit(): void {
     this.changeLogService.get().subscribe((response: ChangeLog[]) => {
-      console.log(response);
       this.changeLogs = response;
-      console.log(this.changeLogs);
     })
   }
   changeLogs : ChangeLog[] = [];
