@@ -29,6 +29,7 @@ namespace ChangeLogSystem.Projects.WebApi
         {
             services.AddControllers();
             services.AddSwaggerGen();
+            services.AddCors();
             services.AddTransient<IChangeLogSystemRepository, ChangeLogSystemJsonRepository>();
         }
 
@@ -55,6 +56,12 @@ namespace ChangeLogSystem.Projects.WebApi
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCors(builder => builder
+             .AllowAnyOrigin()
+             .AllowAnyMethod()
+             .AllowAnyHeader()
+            );
 
             app.UseEndpoints(endpoints =>
             {
