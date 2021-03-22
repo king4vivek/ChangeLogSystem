@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { ChangeLogComponent } from './change-log/change-log.component';
 import { ChangeLogService } from './change-log.service';
 import { ChangeLogSaveComponent } from './change-log-save/change-log-save.component';
+import { LoginClsComponent } from './login-cls/login-cls.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChangeLogComponent,
-    ChangeLogSaveComponent
+    ChangeLogSaveComponent,
+    LoginClsComponent
   ],
   imports: [
     BrowserModule,
@@ -22,6 +24,10 @@ import { ChangeLogSaveComponent } from './change-log-save/change-log-save.compon
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
+      {
+        path: 'login',
+        component: LoginClsComponent
+      },
       {
          path: 'save-log',
          component: ChangeLogSaveComponent
