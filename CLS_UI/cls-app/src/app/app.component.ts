@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { ClsAuthService } from './Services/cls-auth/cls-auth.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cls-app';
+  loggedIn = false;
+  constructor(public socialAuthService: ClsAuthService) {
+    
+  }
+
+  ngOnChanges() {
+    this.loggedIn = this.socialAuthService.loggedIn;
+  }
+
+  logOut(): void {
+    this.socialAuthService.SignOut();
+  }
 }

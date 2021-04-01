@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from "@angular/forms";
 import {Router} from "@angular/router"
 import { ChangeLogSave } from './change-log-save.model';
-import { ChangeLogService } from '../change-log.service';
+import { ChangeLogService } from '../../Services/change-log/change-log.service';
 
 @Component({
   selector: 'app-change-log-save',
