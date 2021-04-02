@@ -14,10 +14,6 @@ export class AppComponent {
     
   }
 
-  ngOnChanges() {
-    this.loggedIn = this.socialAuthService.loggedIn;
-  }
-
   logOut(): void {
     this.socialAuthService.SignOut();
   }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ChangeLog } from './change-log.model';
 import { ChangeLogService } from '../../Services/change-log/change-log.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-change-log',
@@ -9,12 +10,18 @@ import { ChangeLogService } from '../../Services/change-log/change-log.service';
 })
 export class ChangeLogComponent implements OnInit {
 
-  constructor(private changeLogService : ChangeLogService) { }
+  constructor(private router: Router, private changeLogService : ChangeLogService) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.changeLogService.get().subscribe((response: ChangeLog[]) => {
       this.changeLogs = response;
-    })
+    });
   }
   changeLogs : ChangeLog[] = [];
+
+  deleteLog(logId: number): void {
+    this.changeLogService.delete(logId).subscribe((response: boolean) => {      
+      this.router.navigate(['/'])
+    });
+  }
 }

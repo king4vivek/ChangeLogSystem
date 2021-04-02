@@ -24,6 +24,7 @@
                     'badge-success': changeLog.type == 2,
                     'badge-danger': changeLog.type == 3
                   }"> {{ changeLog.type == 1 ? "New" : (changeLog.type == 2 ? "Update" : "Fix")  }}</td>
+                <td><li (click)="deleteLog(changeLog.identity)" class="fas fa-trash-alt" style="color: black; cursor: pointer;"></li></td>
             </tr>
         </tbody>
     </table>

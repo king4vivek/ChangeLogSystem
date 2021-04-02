@@ -29,7 +29,7 @@ import { AuthGuard } from './auth.guard';
     ReactiveFormsModule,
     SocialLoginModule,
     RouterModule.forRoot([
-      
+      { path: '', redirectTo: '/login', pathMatch: 'full' },
       {
         path: 'login',
         component: LoginClsComponent

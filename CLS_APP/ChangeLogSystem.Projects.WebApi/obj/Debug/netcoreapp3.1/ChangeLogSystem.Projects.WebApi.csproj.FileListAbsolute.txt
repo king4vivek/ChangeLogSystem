@@ -30,3 +30,7 @@ D:\Git\ChangeLogSystem\CLS_APP\ChangeLogSystem.Projects.WebApi\obj\Debug\netcore
 D:\Git\ChangeLogSystem\CLS_APP\ChangeLogSystem.Projects.WebApi\obj\Debug\netcoreapp3.1\ChangeLogSystem.Projects.WebApi.dll
 D:\Git\ChangeLogSystem\CLS_APP\ChangeLogSystem.Projects.WebApi\obj\Debug\netcoreapp3.1\ChangeLogSystem.Projects.WebApi.pdb
 D:\Git\ChangeLogSystem\CLS_APP\ChangeLogSystem.Projects.WebApi\obj\Debug\netcoreapp3.1\ChangeLogSystem.Projects.WebApi.genruntimeconfig.cache
+D:\Git\ChangeLogSystem\CLS_APP\ChangeLogSystem.Projects.WebApi\bin\Debug\netcoreapp3.1\Google.Apis.dll
+D:\Git\ChangeLogSystem\CLS_APP\ChangeLogSystem.Projects.WebApi\bin\Debug\netcoreapp3.1\Google.Apis.Auth.PlatformServices.dll
+D:\Git\ChangeLogSystem\CLS_APP\ChangeLogSystem.Projects.WebApi\bin\Debug\netcoreapp3.1\Google.Apis.Auth.dll
+D:\Git\ChangeLogSystem\CLS_APP\ChangeLogSystem.Projects.WebApi\bin\Debug\netcoreapp3.1\Google.Apis.Core.dll

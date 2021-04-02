@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "6d4emI7joRUvFuE4tv061LXfFttbjicadQ2tejnJdZ0kxoFgHRgGsRd9GlHyOQZCFYUvsq+ajh/raVwQPVjCXg==",
+  "dgSpecHash": "PL75UEV+7o5NEthGuZicyeqQhKhceCuzUql/HXLFMUe5hEUL3X2EiizcMiPZb7tq3spvGSZjoCidD0sJd7NxJA==",
   "success": true,
   "projectFilePath": "D:\\Git\\ChangeLogSystem\\CLS_APP\\ChangeLogSystem.Projects.WebApi\\ChangeLogSystem.Projects.WebApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\king4\\.nuget\\packages\\google.apis\\1.51.0\\google.apis.1.51.0.nupkg.sha512",
+    "C:\\Users\\king4\\.nuget\\packages\\google.apis.auth\\1.51.0\\google.apis.auth.1.51.0.nupkg.sha512",
+    "C:\\Users\\king4\\.nuget\\packages\\google.apis.core\\1.51.0\\google.apis.core.1.51.0.nupkg.sha512",
     "C:\\Users\\king4\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\king4\\.nuget\\packages\\microsoft.extensions.configuration\\5.0.0\\microsoft.extensions.configuration.5.0.0.nupkg.sha512",
     "C:\\Users\\king4\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",

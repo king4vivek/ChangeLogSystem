@@ -1,5 +1,7 @@
 ﻿using ChangeLogSystem.Projects.Data.Interfaces;
+using ChangeLogSystem.Projects.WebApi.Authorize;
 using ChangeLogSystem.Projects.WebApi.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +13,7 @@ namespace ChangeLogSystem.Projects.WebApi.Controllers
 {
     [Route("api/changelog")]
     [ApiController]
+    [GoogleAuthorize]
     public class ChangeLogController : ControllerBase
     {
         IChangeLogSystemRepository changeLogSystemRepository;
@@ -28,7 +31,7 @@ namespace ChangeLogSystem.Projects.WebApi.Controllers
 
             if (changeLogs?.Any() == true)
             {
-                var result = changeLogs.Select(cl => (ChangeLogViewModel)cl).ToList().AsEnumerable();
+                var result = changeLogs.Select(cl => (ChangeLogViewModel)cl).ToList().OrderByDescending(cl => cl.Identity).AsEnumerable();
 
                 return Ok(result);
             }

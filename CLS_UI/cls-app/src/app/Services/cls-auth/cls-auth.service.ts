@@ -8,11 +8,11 @@ import { Observable, of } from 'rxjs';
 })
 export class ClsAuthService {
   
-  user: SocialUser;
+  socialUser: SocialUser;
   loggedIn: boolean;
 
   constructor(private router: Router, private socialAuthService: SocialAuthService) {
-    this.user = new SocialUser();
+    this.socialUser = new SocialUser();
     this.loggedIn = false;
   }
 
@@ -23,7 +23,8 @@ export class ClsAuthService {
   SignIn(): void {
     this.socialAuthService.signIn(GoogleLoginProvider.PROVIDER_ID);
     this.socialAuthService.authState.subscribe((user) => {
-      this.user = user;
+      this.socialUser = user;
+      console.log(user);
       this.loggedIn = (user != null);
       this.router.navigate(['/change-logs']);
     });

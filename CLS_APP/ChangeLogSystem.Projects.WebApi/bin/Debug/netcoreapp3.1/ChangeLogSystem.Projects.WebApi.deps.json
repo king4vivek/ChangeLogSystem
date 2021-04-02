@@ -32,6 +32,7 @@
       "ChangeLogSystem.Projects.WebApi/1.0.0": {
         "dependencies": {
           "ChangeLogSystem.Projects.Data": "1.0.0",
+          "Google.Apis.Auth": "1.51.0",
           "Swashbuckle.AspNetCore": "6.1.1",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -318,6 +319,54 @@
         },
         "compile": {
           "ChangeLogSystem.Projects.WebApi.dll": {}
+        }
+      },
+      "Google.Apis/1.51.0": {
+        "dependencies": {
+          "Google.Apis.Core": "1.51.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.dll": {
+            "assemblyVersion": "1.51.0.0",
+            "fileVersion": "1.51.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.dll": {}
+        }
+      },
+      "Google.Apis.Auth/1.51.0": {
+        "dependencies": {
+          "Google.Apis": "1.51.0",
+          "Google.Apis.Core": "1.51.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {
+            "assemblyVersion": "1.51.0.0",
+            "fileVersion": "1.51.0.0"
+          },
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {
+            "assemblyVersion": "1.51.0.0",
+            "fileVersion": "1.51.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Auth.PlatformServices.dll": {},
+          "lib/netstandard2.0/Google.Apis.Auth.dll": {}
+        }
+      },
+      "Google.Apis.Core/1.51.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {
+            "assemblyVersion": "1.51.0.0",
+            "fileVersion": "1.51.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Google.Apis.Core.dll": {}
         }
       },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},
@@ -2123,6 +2172,27 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Google.Apis/1.51.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4QL7S1PnDN/VumfzrLOGw8tiFLYRL/oPVQkCuIVltAh/gSPWxLu7UFZeum4S3B/ry7794Wigg53jclLlYX/haQ==",
+      "path": "google.apis/1.51.0",
+      "hashPath": "google.apis.1.51.0.nupkg.sha512"
+    },
+    "Google.Apis.Auth/1.51.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rwyLkiXev6esCRXq+srUcEb8zWylNg7eyE9zO8GxiQplrn1+Jhn8WlwhyJ/xXM83Mrd7Fi0p/UpnOo+m8NBI2g==",
+      "path": "google.apis.auth/1.51.0",
+      "hashPath": "google.apis.auth.1.51.0.nupkg.sha512"
+    },
+    "Google.Apis.Core/1.51.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2HBwN81SB5DBI/TKbJr6y6u2I5sBlLxUHYUkc26Y4FSFachdDlWISZZreO0AVKdJrHsbmKDhHdqkRjkLSGeiNw==",
+      "path": "google.apis.core/1.51.0",
+      "hashPath": "google.apis.core.1.51.0.nupkg.sha512"
     },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
       "type": "package",
