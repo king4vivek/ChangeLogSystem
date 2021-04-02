@@ -17,6 +17,7 @@ export class ChangeLogComponent implements OnInit {
       this.changeLogs = response;
     });
   }
+
   changeLogs : ChangeLog[] = [];
 
   deleteLog(logId: number): void {

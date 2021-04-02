@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { SocialAuthService, GoogleLoginProvider, SocialUser } from 'angularx-social-login';
-import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -16,23 +15,22 @@ export class ClsAuthService {
     this.loggedIn = false;
   }
 
-  ngOnInit() {
-    
-  }
-
   SignIn(): void {
     this.socialAuthService.signIn(GoogleLoginProvider.PROVIDER_ID);
     this.socialAuthService.authState.subscribe((user) => {
-      this.socialUser = user;
-      console.log(user);
-      this.loggedIn = (user != null);
-      this.router.navigate(['/change-logs']);
+      if(user) {
+        this.socialUser = user;      
+        this.loggedIn = (user != null);
+        sessionStorage.setItem('idToken', user.idToken);
+        this.router.navigate(['/change-logs']);
+      }
     });
   }
 
   SignOut(): void {
     this.socialAuthService.signOut().then(resp => {
       this.router.navigate(['/login']);
+      sessionStorage.removeItem('idToken');
     }).catch(reason => alert(reason));
   }
 }

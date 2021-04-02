@@ -3,7 +3,6 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { ChangeLog } from '../../Components/change-log/change-log.model';
 import { ChangeLogSave } from '../../Components/change-log-save/change-log-save.model';
-import { ClsAuthService } from '../cls-auth/cls-auth.service';
 
 const apiUrl:string = "https://localhost:44384/api/changelog/";
 
@@ -14,11 +13,12 @@ export class ChangeLogService {
 
   httpHeaders: HttpHeaders;
 
-  constructor(private http: HttpClient, private socialAuthService: ClsAuthService) {
-    this.httpHeaders = new HttpHeaders().set("Authorization", this.socialAuthService.socialUser.idToken);
+  constructor(private http: HttpClient) {
+    var idToken:any = sessionStorage.getItem('idToken');
+    this.httpHeaders = new HttpHeaders().set("Authorization", idToken);
   }
 
-  get(): Observable<ChangeLog[]> {  
+  get(): Observable<ChangeLog[]> {
     return this.http.get<ChangeLog[]>(apiUrl, { headers: this.httpHeaders });
   }
 

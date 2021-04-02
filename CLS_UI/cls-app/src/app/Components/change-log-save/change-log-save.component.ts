@@ -9,15 +9,10 @@ import { ChangeLogService } from '../../Services/change-log/change-log.service';
   templateUrl: './change-log-save.component.html',
   styleUrls: ['./change-log-save.component.css']
 })
-export class ChangeLogSaveComponent implements OnInit {
+export class ChangeLogSaveComponent {
 
   changeLogForm: ChangeLogSave = new ChangeLogSave;
   constructor(private router: Router, private changeLogService : ChangeLogService) {
-   }
-
-
-  ngOnInit(): void {
-    
   }
 
   onSubmit(form: NgForm) {

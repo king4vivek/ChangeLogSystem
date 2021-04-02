@@ -8,12 +8,12 @@ import { ClsAuthService } from 'src/app/Services/cls-auth/cls-auth.service';
   styleUrls: ['./login-cls.component.css']
 })
 
-export class LoginClsComponent implements OnInit {
+export class LoginClsComponent {
 
   constructor(private router: Router, private socialAuthService: ClsAuthService) { }
-
-  ngOnInit() {
-    if (this.socialAuthService.loggedIn == true) {
+ 
+  ngOnInit(){
+    if (sessionStorage.getItem('idToken') !== null) {
       this.router.navigate(['/change-logs']);
     }
   }

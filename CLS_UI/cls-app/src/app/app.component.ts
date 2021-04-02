@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 import { ClsAuthService } from './Services/cls-auth/cls-auth.service';
 
 @Component({
@@ -8,10 +7,14 @@ import { ClsAuthService } from './Services/cls-auth/cls-auth.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'cls-app';
-  loggedIn = false;
+  loggedIn:boolean = false;
+
   constructor(public socialAuthService: ClsAuthService) {
-    
+    sessionStorage.removeItem('idToken');
+   }
+
+  ngOnInit(){
+    this.loggedIn = sessionStorage.getItem('idToken') !== null;
   }
 
   logOut(): void {
