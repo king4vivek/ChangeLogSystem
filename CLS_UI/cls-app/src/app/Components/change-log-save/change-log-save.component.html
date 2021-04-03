@@ -1,27 +1,26 @@
-<form #changeLogForm="ngForm" (ngSubmit)="onSubmit(changeLogForm)" autocomplete="off">
-    <div class="form-group">
-      <label for="title">Title</label>
-      <input type="text" class="form-control" placeholder="Enter Title" id="title" name="title" ngModel>
-    </div>
-   
-    <div class="form-group">
-      <label for="content">Content</label>
-      <input type="text" class="form-control" placeholder="Enter Content" id="content" name="content" ngModel>
-    </div>
-       
-    <div class="form-group">
-        <label for="type">Type</label>
-        <select class="form-control" name="type" id="type" ngModel>
-            <option selected="" value=""></option>
-            <option value="1">New</option>
-            <option value="2">Update</option>
-            <option value="3">Fix</option>
-        </select>
-    </div>
-   
-    <div class="form-group">
-      <input type="submit" class="btn btn-primary" value="Submit">
-      <input type="reset" class="btn btn-danger" value="Reset">
-    </div>
-   
-  </form>
+<form #changeForm="ngForm">
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input type="text" id="title" name="title" class="form-control" placeholder="Enter Title" [(ngModel)]="changeLogForm.title" #title="ngModel" autocomplete="off" required>
+  </div>
+
+  <div class="form-group">
+    <label for="content">Content</label>
+    <input type="text" id="content" name="content" class="form-control" placeholder="Enter Content" [(ngModel)]="changeLogForm.content" #content="ngModel" autocomplete="off" required>
+  </div>
+      
+  <div class="form-group">
+      <label for="type">Type</label>
+      <select id="type" name="type" class="form-control" [(ngModel)]="changeLogForm.type" #type="ngModel" required>
+          <option value="0">Select</option>
+          <option value="1">New</option>
+          <option value="2">Update</option>
+          <option value="3">Fix</option>
+      </select>
+  </div>
+
+  <div class="form-group">
+    <button (click)="SaveLog()" class="btn btn-primary btn-lg" [disabled]="!changeForm.valid">Save</button>
+    <button class="btn btn-danger btn-lg float-right" routerLink="/change-logs" routerLinkActive="active">Back</button>
+  </div>
+</form>

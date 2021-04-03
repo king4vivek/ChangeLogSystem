@@ -23,8 +23,11 @@
                     'badge-primary': changeLog.type == 1,
                     'badge-success': changeLog.type == 2,
                     'badge-danger': changeLog.type == 3
-                  }"> {{ changeLog.type == 1 ? "New" : (changeLog.type == 2 ? "Update" : "Fix")  }}</td>
-                <td><li (click)="deleteLog(changeLog.identity)" class="fas fa-trash-alt" style="color: black; cursor: pointer;"></li></td>
+                  }"> {{ changeLog.type == 1 ? "New" : (changeLog.type == 2 ? "Update" : (changeLog.type == 3 ? "Fix" : "Select"))  }}</td>
+                <td>
+                    <li (click)="updateLog(changeLog)" class="fas fa-edit float-left" style="color: black; cursor: pointer;"></li>
+                    <li (click)="deleteLog(changeLog.identity)" class="fas fa-trash-alt float-right" style="color: black; cursor: pointer;"></li>                
+                </td>
             </tr>
         </tbody>
     </table>

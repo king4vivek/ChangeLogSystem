@@ -26,6 +26,10 @@ export class ChangeLogService {
     return this.http.post<boolean>(apiUrl, changeLog, { headers: this.httpHeaders });
   }
 
+  put(changeLog: ChangeLogSave): Observable<boolean> {
+    return this.http.put<boolean>(apiUrl + changeLog.identity, changeLog, { headers: this.httpHeaders });
+  }
+
   delete(logId: number): Observable<boolean> {    
     return this.http.delete<boolean>(apiUrl + logId, { headers: this.httpHeaders });
   }

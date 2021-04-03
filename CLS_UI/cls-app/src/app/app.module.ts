@@ -13,6 +13,7 @@ import { SocialLoginModule, SocialAuthServiceConfig } from 'angularx-social-logi
 import { GoogleLoginProvider } from 'angularx-social-login';
 import { ClsAuthService } from './Services/cls-auth/cls-auth.service';
 import { AuthGuard } from './auth.guard';
+import { ChangeLog } from './Components/change-log/change-log.model';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { AuthGuard } from './auth.guard';
       },
       {
          path: 'save-log',
-         component: ChangeLogSaveComponent, 
+         component: ChangeLogSaveComponent,
+         data: ChangeLog,
          canActivate:[AuthGuard]
       },
       {

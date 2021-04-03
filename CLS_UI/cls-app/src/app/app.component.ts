@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { ClsAuthService } from './Services/cls-auth/cls-auth.service';
 
 @Component({
@@ -7,17 +7,15 @@ import { ClsAuthService } from './Services/cls-auth/cls-auth.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  loggedIn:boolean = false;
 
-  constructor(public socialAuthService: ClsAuthService) {
-    sessionStorage.removeItem('idToken');
-   }
-
-  ngOnInit(){
-    this.loggedIn = sessionStorage.getItem('idToken') !== null;
-  }
+  constructor(public socialAuthService: ClsAuthService) { }
 
   logOut(): void {
     this.socialAuthService.SignOut();
+  }
+
+  @HostListener('window:beforeunload', [ '$event' ])
+  beforeUnloadHandler(e:any) {
+    sessionStorage.removeItem('idToken');
   }
 }

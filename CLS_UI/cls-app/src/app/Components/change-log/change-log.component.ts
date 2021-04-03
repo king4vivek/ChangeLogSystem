@@ -25,4 +25,9 @@ export class ChangeLogComponent implements OnInit {
       this.router.navigate(['/'])
     });
   }
+
+  updateLog(changeLog: ChangeLog): void {
+
+    this.router.navigate(['/save-log'], { state: changeLog });
+  }
 }
